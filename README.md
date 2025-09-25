@@ -4,7 +4,7 @@
 
 <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> Backend Developer whi02 </h2>  
-    <div style="font-weight: 700; font-size: 15px; color: #c9d1d9;"> 성장과 배움을 즐기는 백엔드 개발자 whi02입니다. </div> 
+    <div style="font-weight: 700; font-size: 15px; color: #c9d1d9;"> 배움과 성장을 즐기는 백엔드 개발자 whi02입니다. </div> 
 </div>
 
 
