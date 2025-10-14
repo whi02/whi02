@@ -1,7 +1,7 @@
 <div align="center">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=ffffff&height=120&text=𝑯𝒆𝒍𝒍𝒐%20𝑰'𝒎%20𝒘𝒉𝒊𝒚𝒐𝒖𝒏𝒈&animation=fadeIn&fontColor=ffffff&fontSize=50" />
 </div>
-
+ 
 <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> Backend Developer whi02 </h2>  
     <div style="font-weight: 700; font-size: 15px; color: #c9d1d9;"> 배움과 성장을 즐기는 백엔드 개발자 whi02입니다. <br/> I’m a backend developer, whi02, who enjoys learning and growing. </div> 
