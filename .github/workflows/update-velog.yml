@@ -2,19 +2,54 @@ name: Update Velog Posts
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # 6시간마다 실행
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # 매일 자정 자동 실행
+  workflow_dispatch:      # 수동 실행 가능
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Update README with Velog Posts
-        uses: gautamkrishnar/blog-post-workflow@master
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          feed_list: "https://api.velog.io/rss/@whi02"
-          max_post_count: 5
-          readme_path: README.md
-          gh_token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: '20'
+
+      - name: Fetch Velog RSS and Update README
+        run: |
+          npm install rss-parser
+          node <<'EOF'
+          const fs = require('fs');
+          const RSSParser = require('rss-parser');
+          const parser = new RSSParser();
+
+          (async () => {
+            const feed = await parser.parseURL('https://api.velog.io/rss/@whi02');
+            const posts = feed.items.slice(0, 5);
+
+            let section = '';
+            for (const post of posts) {
+              const date = new Date(post.pubDate).toLocaleDateString('ko-KR');
+              section += `| 📄 [${post.title}](${post.link}) | ${date} |\n`;
+            }
+
+            const table = `| 제목 | 날짜 |\n|------|------|\n${section}`;
+
+            let readme = fs.readFileSync('README.md', 'utf8');
+            readme = readme.replace(
+              /<!-- VELOG_POSTS:START -->[\s\S]*?<!-- VELOG_POSTS:END -->/,
+              `<!-- VELOG_POSTS:START -->\n${table}\n<!-- VELOG_POSTS:END -->`
+            );
+            fs.writeFileSync('README.md', readme);
+            console.log('README updated!');
+          })();
+          EOF
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update velog posts" || echo "No changes to commit"
+          git push
