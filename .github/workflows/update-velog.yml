@@ -1,0 +1,20 @@
+name: Update Velog Posts
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # 6시간마다 실행
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update README with Velog Posts
+        uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          feed_list: "https://api.velog.io/rss/@whi02"
+          max_post_count: 5
+          readme_path: README.md
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
