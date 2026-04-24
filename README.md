@@ -15,6 +15,14 @@ name: 유휘영 (Whi Young)
 school: 광주소프트웨어마이스터고등학교 · 클라우드컴퓨팅 · 2학년
 role:
   - Cloud Engineer
+location: GwangJu, Republic of Korea
+currently_learning:
+  - AWS SAA
+  - Linux Master
+interests:
+  - Cloud Infrastructure
+  - DevOps
+  - System Optimization
 ```
 
 <br/>
@@ -124,7 +132,7 @@ role:
 
 <div align="center">
 
-[![GSM](https://img.shields.io/badge/광주소프트웨어마이스터고등학교-003087?style=flat-square&logo=googlescholar&logoColor=white)]([http://gsm.gen.hs.kr/])
+[![GSM](https://img.shields.io/badge/광주소프트웨어마이스터고등학교-003087?style=flat-square&logo=googlescholar&logoColor=white)](http://gsm.gen.hs.kr/)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0288d1,50:1a237e,100:0d1117&height=80&section=footer" width="100%"/>
 
