@@ -11,7 +11,7 @@
 ## 👋 About Me
 
 ```yaml
-name: 유휘영 (Whi Young)
+name: 유휘영 (Ryu whi Young)
 school: 광주소프트웨어마이스터고등학교 · 클라우드컴퓨팅 · 2학년
 role:
   - Cloud Engineer
