@@ -10,19 +10,19 @@
 
 ## 👋 About Me
 
-```bash
-#!/bin/bash
-# $ whoami
+```console
+$ whoami
+Name     : 유휘영 (Ryu Whi Young)
+School   : 광주소프트웨어마이스터고등학교 · Cloud Computing · Grade 2
+Location : Gwangju, Republic of Korea
+Role     : Cloud Engineer in Training
 
-echo "Name     : 유휘영 (Ryu Whi Young)"
-echo "School   : 광주소프트웨어마이스터고등학교 · Cloud Computing · Grade 2"
-echo "Location : Gwangju, Republic of Korea"
-echo "Role     : Cloud Engineer in Training"
-echo ""
-echo "Learning : AWS SAA · Linux Master"
-echo "Interests: Cloud Infrastructure · DevOps · System Optimization"
-echo ""
-echo "Status   : All systems operational"
+$ cat interests.txt
+Learning : AWS SAA · Linux Master
+Interests: Cloud Infrastructure · DevOps · System Optimization
+
+$ systemctl status developer
+Status   : All systems operational
 ```
 
 <br/>
