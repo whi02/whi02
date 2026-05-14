@@ -21,12 +21,12 @@ RUN apt-get install -y \
     kubernetes \
     terraform \
     aws-cli \
-    docker
+    docker          # yes, inside docker
 
 ENV STUDYING  = "AWS SAA · Linux Master" \
     INTERESTS = "Cloud Infra · DevOps · System Optimization"
 
-EXPOSE 443
+EXPOSE 443          # http는 안 써요
 
 CMD ["keep", "--growing"]
 ```
