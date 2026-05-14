@@ -10,19 +10,25 @@
 
 ## 👋 About Me
 
-```console
-$ whoami
-Name     : 유휘영 (Ryu Whi Young)
-School   : 광주소프트웨어마이스터고등학교 · Cloud Computing · Grade 2
-Location : Gwangju, Republic of Korea
-Role     : Cloud Engineer in Training
+```dockerfile
+FROM gsm:cloud-computing
 
-$ cat interests.txt
-Learning : AWS SAA · Linux Master
-Interests: Cloud Infrastructure · DevOps · System Optimization
+LABEL maintainer="유휘영 (Ryu Whi Young)"
+LABEL location="Gwangju, Republic of Korea"
 
-$ systemctl status developer
-Status   : All systems operational
+RUN apt-get install -y \
+    kubernetes \
+    terraform \
+    aws-cli \
+    docker      # yes, inside docker
+
+ENV ROLE="Cloud Engineer in Training"
+ENV STUDYING="AWS SAA · Linux Master"
+ENV INTERESTS="Cloud Infra · DevOps · System Optimization"
+
+EXPOSE 443
+
+CMD ["keep", "--growing"]
 ```
 
 <br/>
