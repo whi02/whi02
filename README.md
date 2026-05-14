@@ -10,23 +10,23 @@
 
 ## 👋 About Me
 
-```python
-class WhiYoung:
-    def __init__(self):
-        self.name               = "유휘영 (Ryu Whi Young)"
-        self.school             = "광주소프트웨어마이스터고등학교 · Cloud Computing · Grade 2"
-        self.role               = "Cloud Engineer in Training"
-        self.location           = "Gwangju, Republic of Korea"
-        self.interests          = ["Cloud Infrastructure", "DevOps", "System Optimization"]
-        self.currently_learning = ["AWS SAA", "Linux Master"]
-        self.motto              = "if it works locally, ship it to the cloud ☁️"
+```bash
+#!/bin/bash
+# whoami
 
-    def say_hi(self):
-        print(f"Hey, I'm {self.name}!")
-        print(f"Currently scaling up at {self.school}")
+NAME="유휘영 (Ryu Whi Young)"
+SCHOOL="광주소프트웨어마이스터고등학교 · Cloud Computing · Grade 2"
+LOCATION="Gwangju, Republic of Korea"
+ROLE="Cloud Engineer in Training"
+LEARNING=("AWS SAA" "Linux Master")
+INTERESTS=("Cloud Infrastructure" "DevOps" "System Optimization")
 
-me = WhiYoung()
-me.say_hi()
+echo "[INFO]  Hi, I'm $NAME"
+echo "[INFO]  $SCHOOL"
+echo "[INFO]  Located in $LOCATION · Role: $ROLE"
+echo "[STUDY] $(IFS=', '; echo "${LEARNING[*]}")"
+echo "[LOVE]  $(IFS=', '; echo "${INTERESTS[*]}")"
+echo "[DONE]  All systems operational ✅"
 ```
 
 <br/>
