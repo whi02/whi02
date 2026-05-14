@@ -13,9 +13,9 @@
 ```dockerfile
 FROM gsm:cloud-computing
 
-LABEL maintainer="유휘영 (Ryu Whi Young)" \
-      location="Gwangju, Republic of Korea" \
-      role="Cloud Engineer in Training"
+LABEL maintainer = "유휘영 (Ryu Whi Young)" \
+      location  = "Gwangju, Republic of Korea" \
+      role      = "Cloud Engineer in Training"
 
 RUN apt-get install -y \
     kubernetes \
@@ -23,8 +23,8 @@ RUN apt-get install -y \
     aws-cli \
     docker
 
-ENV STUDYING="AWS SAA · Linux Master" \
-    INTERESTS="Cloud Infra · DevOps · System Optimization"
+ENV STUDYING  = "AWS SAA · Linux Master" \
+    INTERESTS = "Cloud Infra · DevOps · System Optimization"
 
 EXPOSE 443
 
