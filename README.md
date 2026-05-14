@@ -12,21 +12,17 @@
 
 ```bash
 #!/bin/bash
-# whoami
+# $ whoami
 
-NAME="유휘영 (Ryu Whi Young)"
-SCHOOL="광주소프트웨어마이스터고등학교 · Cloud Computing · Grade 2"
-LOCATION="Gwangju, Republic of Korea"
-ROLE="Cloud Engineer in Training"
-LEARNING=("AWS SAA" "Linux Master")
-INTERESTS=("Cloud Infrastructure" "DevOps" "System Optimization")
-
-echo "[INFO]  Hi, I'm $NAME"
-echo "[INFO]  $SCHOOL"
-echo "[INFO]  Located in $LOCATION · Role: $ROLE"
-echo "[STUDY] $(IFS=', '; echo "${LEARNING[*]}")"
-echo "[LOVE]  $(IFS=', '; echo "${INTERESTS[*]}")"
-echo "[DONE]  All systems operational ✅"
+echo "Name     : 유휘영 (Ryu Whi Young)"
+echo "School   : 광주소프트웨어마이스터고등학교 · Cloud Computing · Grade 2"
+echo "Location : Gwangju, Republic of Korea"
+echo "Role     : Cloud Engineer in Training"
+echo ""
+echo "Learning : AWS SAA · Linux Master"
+echo "Interests: Cloud Infrastructure · DevOps · System Optimization"
+echo ""
+echo "Status   : All systems operational ✅"
 ```
 
 <br/>
