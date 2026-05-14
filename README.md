@@ -26,7 +26,7 @@ RUN apt-get install -y \
 ENV STUDYING  = "AWS SAA · Linux Master" \
     INTERESTS = "Cloud Infra · DevOps · System Optimization"
 
-EXPOSE 443          # http는 안 써요
+EXPOSE 443
 
 CMD ["keep", "--growing"]
 ```
