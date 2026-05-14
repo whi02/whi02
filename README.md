@@ -10,19 +10,23 @@
 
 ## 👋 About Me
 
-```yaml
-name: 유휘영 (Ryu whi Young)
-school: 광주소프트웨어마이스터고등학교 · 클라우드컴퓨팅 · 2학년
-role:
-  - Cloud Engineer
-location: GwangJu, Republic of Korea
-currently_learning:
-  - AWS SAA
-  - Linux Master
-interests:
-  - Cloud Infrastructure
-  - DevOps
-  - System Optimization
+```python
+class WhiYoung:
+    def __init__(self):
+        self.name               = "유휘영 (Ryu Whi Young)"
+        self.school             = "광주소프트웨어마이스터고등학교 · Cloud Computing · Grade 2"
+        self.role               = "Cloud Engineer in Training"
+        self.location           = "Gwangju, Republic of Korea"
+        self.interests          = ["Cloud Infrastructure", "DevOps", "System Optimization"]
+        self.currently_learning = ["AWS SAA", "Linux Master"]
+        self.motto              = "if it works locally, ship it to the cloud ☁️"
+
+    def say_hi(self):
+        print(f"Hey, I'm {self.name}!")
+        print(f"Currently scaling up at {self.school}")
+
+me = WhiYoung()
+me.say_hi()
 ```
 
 <br/>
