@@ -22,7 +22,7 @@ echo ""
 echo "Learning : AWS SAA · Linux Master"
 echo "Interests: Cloud Infrastructure · DevOps · System Optimization"
 echo ""
-echo "Status   : All systems operational ✅"
+echo "Status   : All systems operational"
 ```
 
 <br/>
