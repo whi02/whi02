@@ -13,18 +13,18 @@
 ```dockerfile
 FROM gsm:cloud-computing
 
-LABEL maintainer="유휘영 (Ryu Whi Young)"
-LABEL location="Gwangju, Republic of Korea"
+LABEL maintainer="유휘영 (Ryu Whi Young)" \
+      location="Gwangju, Republic of Korea" \
+      role="Cloud Engineer in Training"
 
 RUN apt-get install -y \
     kubernetes \
     terraform \
     aws-cli \
-    docker      # yes, inside docker
+    docker
 
-ENV ROLE="Cloud Engineer in Training"
-ENV STUDYING="AWS SAA · Linux Master"
-ENV INTERESTS="Cloud Infra · DevOps · System Optimization"
+ENV STUDYING="AWS SAA · Linux Master" \
+    INTERESTS="Cloud Infra · DevOps · System Optimization"
 
 EXPOSE 443
 
